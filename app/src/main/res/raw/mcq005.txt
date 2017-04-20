@@ -1,0 +1,6 @@
+You have developed a MIDlet that runs on a Java-enabled Personal Digital Assistant (PDA)device. Now, your employer has asked you to port the MIDlet to run on other Java platforms. Which is true?
+The MIDlet is 100% portable across all J2ME devices.
+The MIDlet can run within a standard web browser.
+The MIDlet is guaranteed to run correctly under J2SE.
+The MIDlet is NOT guaranteed to run on a Java technology-enabled phone.
+D

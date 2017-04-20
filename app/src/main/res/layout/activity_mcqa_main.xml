@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollMCQ"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none"
+    android:layout_weight="1">
+
+    <TableLayout
+        android:id="@+id/associateMCQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/rowStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowAnswerB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+            <RadioGroup
+                android:id="@+id/grpColour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_span="3"
+                android:orientation="vertical" >
+                <RadioButton
+                    android:id="@+id/rdbA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:checked="false"
+                    android:layout_gravity="left"
+                    android:layout_weight="0" />
+                <RadioButton
+                    android:id="@+id/rdbB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:checked="false"
+                    android:layout_gravity="left"
+                    android:layout_weight="0" />
+                <RadioButton
+                    android:id="@+id/rdbC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:checked="false"
+                    android:layout_gravity="left"
+                    android:layout_weight="0" />
+                <RadioButton
+                    android:id="@+id/rdbD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:checked="false"
+                    android:layout_gravity="left"
+                    android:layout_weight="0" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rowButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/previous"
+                android:onClick="getPreviousMCQ" />
+
+            <Button
+                android:id="@+id/btnAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/answer"
+                android:onClick="checkAnswer" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:onClick="getNextMCQ" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

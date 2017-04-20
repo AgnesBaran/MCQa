@@ -1,0 +1,6 @@
+What is the purpose of JNDI?
+to access native code from a Java application
+to parse XML documents
+to access various directory services using a single interface
+to register Java Web Start applications with a web server
+C

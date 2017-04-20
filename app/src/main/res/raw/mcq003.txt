@@ -1,0 +1,6 @@
+Which type of J2EE component is used to store business data persistently?
+stateless session beans
+JavaBeans
+stateful session beans
+entity beans
+D
